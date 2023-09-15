@@ -75,11 +75,11 @@
           <li style="font-family: Playfair Display, sans-serif">
             <button type="button" class="btn btn-light"> <a href="{{url_for('views.verify_students')}}"  decoration:"none"> VERIFY IDs </a> </button>
           </li>
-          <li style="font-family: Playfair Display, sans-serif"> College Name </li>
-          <li style="font-family: Playfair Display, sans-serif">College ID</li>
-          <li style="font-family: Playfair Display, sans-serif">Director</li>
-          <li style="font-family: Playfair Display, sans-serif">Description</li>
-          
+          <!-- institute_profile.html -->
+
+            <li style="font-family: Playfair Display, sans-serif">Name: {{ college_name }}</li>
+            <li style="font-family: Playfair Display, sans-serif">Place: {{ location }}</li>
+            <li style="font-family: Playfair Display, sans-serif">Email: {{ email }}</li>
 
 
         </ul>

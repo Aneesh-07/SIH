@@ -103,7 +103,13 @@ def institute_profile():
         print ("calledin")
         return redirect(url_for('views.home'))
     
-    return render_template('institute_profile.html')
+    college_name = current_user.name
+    location = current_user.location
+    email = current_user.email
+
+    # Pass the data to the template
+    return render_template('institute_profile.html', college_name=college_name, location = location,email = email)
+
 
 @views.route('/student_profile')
 @login_required
